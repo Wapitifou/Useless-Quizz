@@ -124,7 +124,7 @@ class Quizz {
         button.disabled = false;
       });
       quizzApp();
-    }, 1000);
+    }, 6000);
   }
   hasEnded() {
     return this.currentQuestionIndex >= this.questions.length;
