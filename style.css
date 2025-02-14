@@ -16,7 +16,7 @@ body {
   display: flex;
 }
 
-#quiz {
+#quizz {
   display: flex;
   flex-direction: column;
   align-items: center;
