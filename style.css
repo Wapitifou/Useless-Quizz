@@ -36,12 +36,32 @@ h1 {
   font-family: "fugaz one";
   color: whitesmoke;
   font-size: 3rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+    word-wrap: break-word;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 }
 
 h2 {
   font-family: "red hat text";
   color: lightcoral;
   margin: 0 0 90px;
+  text-align: center;
+  padding: 0 20px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+  }
 }
 
 #progress {
@@ -63,6 +83,15 @@ h3 {
   text-align: center;
   margin: 0 0 15px;
   font-weight: 500;
+  padding: 20px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.8rem;
+  }
 }
 
 h4 {
@@ -72,6 +101,11 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 250px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 button {
@@ -100,6 +134,7 @@ div#answer {
   height: 30px;
   font-family: "red hat text";
   color: rgb(55, 185, 236);
+  padding: 20px;
 }
 
 h4 {
