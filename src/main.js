@@ -113,7 +113,7 @@ class Quizz {
       this.score++;
     }
 
-    display.showAnswer(currentQuestion);
+    display.showAnswer(currentQuestion, answer);
 
     setTimeout(() => {
       this.currentQuestionIndex++;
@@ -124,7 +124,7 @@ class Quizz {
         button.disabled = false;
       });
       quizzApp();
-    }, 6000);
+    }, 5000);
   }
   hasEnded() {
     return this.currentQuestionIndex >= this.questions.length;
@@ -168,7 +168,18 @@ const display = {
     <span><strong>${question.answer}. </strong></span>
       <span>${question.explanation}</span>
     `;
+
     this.elementShown("answer", answerHTML);
+
+    setTimeout(() => {
+      let explanation = document.getElementById("answer");
+
+      if (userChoice === question.answer) {
+        explanation.style.color = "#3b7053";
+      } else {
+        explanation.style.color = "#923838";
+      }
+    }, 50);
   },
   endQuizz: function () {
     let endQuizzHTML = `

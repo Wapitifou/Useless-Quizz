@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 90%;
   margin: auto;
 }
 
@@ -30,12 +31,14 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 30px;
 }
 
 h1 {
   font-family: "fugaz one";
   color: whitesmoke;
   font-size: 3rem;
+  text-align: center;
 
   @media screen and (max-width: 600px) {
     font-size: 2rem;
@@ -50,9 +53,8 @@ h1 {
 h2 {
   font-family: "red hat text";
   color: lightcoral;
-  margin: 0 0 90px;
+  margin: 0 0 40px;
   text-align: center;
-  padding: 0 20px;
 
   @media screen and (max-width: 600px) {
     font-size: 1.2rem;
@@ -73,7 +75,8 @@ h2 {
 
 .questions-container {
   width: 550px;
-  height: 250px;
+  min-height: 250px;
+  width: 90%;
   margin: auto;
 }
 
@@ -81,9 +84,10 @@ h3 {
   font-family: "red hat text";
   color: lightcoral;
   text-align: center;
-  margin: 0 0 15px;
+  margin: 0 20px 15px;
   font-weight: 500;
   padding: 20px;
+  width: 100%;
 
   @media screen and (max-width: 600px) {
     font-size: 1rem;
@@ -101,10 +105,12 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 250px;
+  gap: 10px;
 
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     gap: 10px;
+    min-height: 150px;
   }
 }
 
@@ -115,10 +121,14 @@ button {
   border-radius: 15px;
   border: none;
   transition: 0.2s ease;
+
+  @media screen and (max-width: 600px) {
+    height: 70px;
+  }
 }
 
 button:hover {
-  background: lightcoral;
+  background: rgb(55, 185, 236);
   transform: scale(0.9);
 }
 
@@ -131,10 +141,15 @@ p {
 
 div#answer {
   width: 100%;
-  height: 30px;
+  min-height: 30px;
   font-family: "red hat text";
   color: rgb(55, 185, 236);
   padding: 20px;
+  margin: 40px 0;
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
 }
 
 h4 {
